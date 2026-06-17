@@ -333,10 +333,9 @@ A **single-column layout** optimized for smaller screens.
 | Device | Layout |
 |--------|--------|
 | Desktop | Two-column |
-| Tablet | Simplified two-column or stacked |
 | Mobile | Single-column |
 
-This ensures readability and usability across laptops, tablets, and smartphones.
+This ensures readability and usability across laptops and smartphones.
 
 ---
 
