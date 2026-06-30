@@ -12,11 +12,6 @@
 * from your instructor.
 */ 
 
-const { title = "CSARCH2 Virtual Exhibit", author } = Astro.props.frontmatter ?? Astro.props;
-
-const allExhibits = await Astro.glob('../pages/*.mdx');
-const exhibits = allExhibits.filter(exhibit => !exhibit.file.includes('index.mdx'));
-
 import 'normalize.css';
 import '@fontsource-variable/lora';
 import '@fontsource-variable/noto-sans';
@@ -24,6 +19,11 @@ import '@fontsource-variable/noto-sans';
 import '../styles/global.css'; 
 
 import { Icon } from 'astro-icon/components';
+
+const { title = "CSARCH2 Virtual Exhibit", author } = Astro.props.frontmatter ?? Astro.props;
+
+const allExhibits = await Astro.glob('../pages/*.mdx');
+const exhibits = allExhibits.filter(exhibit => !exhibit.file.includes('index.mdx'));
 
 ---
 
