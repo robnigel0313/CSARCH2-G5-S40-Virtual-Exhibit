@@ -9,6 +9,23 @@
 - ROGACION, Rob Nigel
 
 ---
+*MID-MILESTONE DOCUMENTATION*
+
+---
+
+# Website Deployment
+**Live URL:** https://dlsu-archcraft.github.io/virtual-exhibit-template/
+
+# Challenges Faced
+### Astro Integration & Deployment
+- Navigated versioning conflicts when upgrading the template environment to Astro 6. This was solved by using the `--legacy-peer-deps` flag to bypass the strict requirements of the outdated `package-lock.json` file.
+- Encountered production build crashes because `const` declarations were placed above `import` statements in the Astro frontmatter of the provided template.
+- Discovered that mixing Astro's native `Astro.glob()` function with MDX pages causes a compilation bug (`Astro2.glob is not a function`) during the production build. Addressed the problem by swapping Astro's function for Vite's native `import.meta.glob` to successfully bypass the compiler error and deploy the site.
+
+---
+*PROJECT PROPOSAL*
+
+---
 
 # Topic Theme
 
