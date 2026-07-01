@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Left column */
+.left {
+    flex: 2;
+    background-color: #1E293B;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Right column */
+.right {
+    flex: 1;
+    background-color: #1E293B;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
