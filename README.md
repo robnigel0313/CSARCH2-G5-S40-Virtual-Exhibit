@@ -14,7 +14,7 @@
 ---
 
 # Website Deployment
-**Live URL:** https://dlsu-archcraft.github.io/virtual-exhibit-template/
+**Live URL:** https://robnigel0313.github.io/CSARCH2-G5-S40-Virtual-Exhibit/
 
 # Challenges Faced
 ### Astro Integration & Deployment
